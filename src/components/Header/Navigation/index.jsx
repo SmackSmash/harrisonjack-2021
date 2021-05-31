@@ -6,13 +6,21 @@ import './Navigation.scss';
 const Navigation = () => {
   return (
     <nav className="nav">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
+      <NavLink className="nav__link" to="/">
+        Home
+      </NavLink>
+      <NavLink className="nav__link" to="/about">
+        About
+      </NavLink>
       <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
+      <NavLink className="nav__link" to="/">
+        Home
+      </NavLink>
+      <NavLink className="nav__link" to="/about">
+        About
+      </NavLink>
     </nav>
   );
 };
